@@ -9,7 +9,7 @@ var sanitizer = require('sanitizer');
 var port = process.env.PORT || 3000;
 
 const JSONdb = require('simple-json-db');
-cont db = new JSONdb(__dirname + '/db.json');
+const db = new JSONdb(__dirname + '/db.json');
 
 const delete_check_key = process.env.DELKEY;
 
