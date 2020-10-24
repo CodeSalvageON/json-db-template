@@ -83,6 +83,12 @@ app.post("/delete", function (req, res) {
   }
 });
 
+app.get("/", function (req, res) {
+  const index = __dirname + '/public/index.html';
+  
+  res.sendFile(index);
+});
+
 http.listen(port, function(){
   console.log('listening on *:' + port);
 });
